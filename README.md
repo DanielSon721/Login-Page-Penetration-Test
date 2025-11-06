@@ -18,9 +18,9 @@ This combination made the app trivially exploitable during testing.
 
 
 
-Vulnerabilities found
+# Vulnerabilities found
 
-1. SQL injection
+## 1. SQL injection
 
 Occurred because SQL queries were assembled with string concatenation using raw username/password inputs.
 
