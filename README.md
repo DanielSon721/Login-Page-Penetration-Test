@@ -1,4 +1,4 @@
-# Login-Page-Penetration-Test
+<img width="1512" height="950" alt="IMG_4317" src="https://github.com/user-attachments/assets/68462e5b-fa7d-464a-9161-ef571224eb89" /># Login-Page-Penetration-Test
 
 Overview
 
@@ -20,13 +20,24 @@ This combination made the app trivially exploitable during testing.
 
 
 
-Vulnerabilities found (what I discovered during pentest)
+Vulnerabilities found
 
 1. SQL injection
 
 Occurred because SQL queries were assembled with string concatenation using raw username/password inputs.
 
 Example exploit: username = "admin' OR 1=1 --" allowed bypassing authentication.
+
+<img width="1512" height="950" alt="IMG_4317" src="https://github.com/user-attachments/assets/59027c7f-9ff0-4c59-bc07-7676d47bb87c" />
+
+<img width="1512" height="948" alt="IMG_9866" src="https://github.com/user-attachments/assets/3ba13c9a-884b-4552-bbcb-36a1922d801e" />
+
+
+To remediate this vulnerability, I replaced all string-built SQL with parameterized queries (PyMySQL %s placeholders).
+
+Before: <img width="747" height="103" alt="IMG_9712" src="https://github.com/user-attachments/assets/d7481c9c-234f-4796-a4bb-c9f29152cfc4" />
+
+After: <img width="703" height="77" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
 
 2. Plaintext credential storage
 
