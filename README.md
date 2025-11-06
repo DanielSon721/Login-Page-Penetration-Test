@@ -45,6 +45,12 @@ After:
 
 Passwords were persisted in the DB as clear text. If the DB was leaked, attacker immediately had usable credentials.
 
+<img width="267" height="139" alt="IMG_6150" src="https://github.com/user-attachments/assets/07e24f6b-ac1a-4742-a8a1-7ca8752b6be7" />
+
+I deployed bcrypt salted password hashing to convert plaintext passwords into ciphertext, preventing human readability.
+
+<img width="591" height="140" alt="IMG_7736" src="https://github.com/user-attachments/assets/97a82857-d55d-4d8f-aded-6d3a68688ec3" />
+
 3. Automated brute-force
 
 No rate limiting or lockouts meant tools like Hydra could try large password lists and enumerate credentials quickly.
