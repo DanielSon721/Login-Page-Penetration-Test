@@ -41,7 +41,7 @@ After:
 
 <img width="703" height="77" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
 
-2. Plaintext credential storage
+## 2. Plaintext credential storage
 
 Passwords were persisted in the DB as clear text. If the DB was leaked, attacker immediately had usable credentials.
 
@@ -51,7 +51,7 @@ I deployed bcrypt salted password hashing to convert plaintext passwords into ci
 
 <img width="591" height="140" alt="IMG_7736" src="https://github.com/user-attachments/assets/97a82857-d55d-4d8f-aded-6d3a68688ec3" />
 
-3. Automated brute-force
+## 3. Automated brute-force
 
 No rate limiting or lockouts meant tools like Hydra could try large password lists and enumerate credentials quickly.
 
