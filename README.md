@@ -56,3 +56,10 @@ I deployed bcrypt salted password hashing to convert plaintext passwords into ci
 No rate limiting or lockouts meant tools like Hydra could try large password lists and enumerate credentials quickly.
 
 I validated exploitation with local tests and automated tools (Hydra) against the pre-patch site to reproduce real-world attack scenarios.
+
+<img width="1710" height="1218" alt="IMG_1253" src="https://github.com/user-attachments/assets/c87034e9-cda6-4125-a2f6-60088b7cc014" />
+
+To prevent brute force attacks, I introduced an account lockout mechanism that automatically blocks accounts after 5 failed login attempts with a 15-minute
+cooldown period.
+
+<img width="502" height="116" alt="IMG_3153" src="https://github.com/user-attachments/assets/65392e06-2845-4b45-9038-918fe6d681db" />
