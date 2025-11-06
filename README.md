@@ -1,6 +1,6 @@
 # Overview
 
-I built a custom login page from scratch for a Flask web app (Flask, PyMySQL, MySQL). Because it was a minimal, homemade implementation, I treated it as an opportunity to practice secure development: I performed self-directed penetration testing, found multiple critical weaknesses such as
+I built a custom login page from scratch for a Flask web app (Flask, PyMySQL, MySQL). Because it was a minimal, homemade implementation, I treated it as an opportunity to practice secure development: I performed self-directed penetration testing, found multiple critical weaknesses such as:
 
 - SQL injection
 - unencrypted plaintext credentials
@@ -12,13 +12,13 @@ Then remediated each issue and validated the fixes.
 
 The original app used a simple signup/login flow with HTML forms and server code that:
 
-- built SQL queries by concatenating user input,
+- built SQL queries by concatenating user input
 
-- stored passwords directly as plaintext in the users table,
+- stored passwords directly as plaintext in the users table
 
-- returned distinct error messages and had no rate limits or lockouts,
+- returned distinct error messages and had no rate limits or lockouts
 
-- served over HTTP in development and ran with debug=True.
+- served over HTTP in development and ran with debug=True
 
 This combination made the app trivially exploitable during testing.
 
