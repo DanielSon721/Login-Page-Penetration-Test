@@ -1,6 +1,12 @@
 # Overview
 
-I built a custom login page from scratch for a Flask web app (Flask, PyMySQL, MySQL). Because it was a minimal, homegrown implementation, I treated it as an opportunity to practice secure development: I performed self-directed penetration testing, found multiple critical weaknesses (SQL injection, unencrypted plaintext credentials, and susceptibility to automated brute-force), then remediated each issue and validated the fixes.
+I built a custom login page from scratch for a Flask web app (Flask, PyMySQL, MySQL). Because it was a minimal, homemade implementation, I treated it as an opportunity to practice secure development: I performed self-directed penetration testing, found multiple critical weaknesses such as
+
+- SQL injection
+- unencrypted plaintext credentials
+- susceptibility to automated brute-force
+
+Then remediated each issue and validated the fixes.
 
 # Initial implementation
 
