@@ -39,7 +39,7 @@ Before:
 
 After:
 
-<img width="703" height="77" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
+<img width="747" height="82" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
 
 ## 2. Plaintext credential storage
 
