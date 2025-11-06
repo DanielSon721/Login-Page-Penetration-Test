@@ -37,6 +37,9 @@ Occurred because SQL queries were assembled with string concatenation using raw 
 <img width="756" height="475" alt="IMG_9866" src="https://github.com/user-attachments/assets/3ba13c9a-884b-4552-bbcb-36a1922d801e" />
 
 <br>
+<br>
+<br>
+<br>
 
 To remediate this vulnerability, I replaced all string-built SQL with parameterized queries (PyMySQL %s placeholders).
 
