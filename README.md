@@ -49,7 +49,7 @@ Passwords were persisted in the database as plaintext. If the database was leake
 
 I deployed Argon2 salted password hashing to convert plaintext passwords into ciphertext, preventing human readability.
 
-<img width="267" height="44" alt="image" src="https://github.com/user-attachments/assets/e4edf7f3-5f71-4769-8046-e72a337066ef" />
+<img width="850" height="140" alt="image" src="https://github.com/user-attachments/assets/18066ad2-7775-4618-b558-b01ad1544487" />
 
 ## 3. Automated brute-force
 
