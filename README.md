@@ -1,5 +1,3 @@
-<img width="1512" height="950" alt="IMG_4317" src="https://github.com/user-attachments/assets/68462e5b-fa7d-464a-9161-ef571224eb89" /># Login-Page-Penetration-Test
-
 Overview
 
 I built a custom login page from scratch for a Flask web app (Flask, PyMySQL, MySQL). Because it was a minimal, homegrown implementation, I treated it as an opportunity to practice secure development: I performed self-directed penetration testing, found multiple critical weaknesses (SQL injection, unencrypted plaintext credentials, and susceptibility to automated brute-force), then remediated each issue and validated the fixes.
