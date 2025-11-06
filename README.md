@@ -33,9 +33,13 @@ Example exploit: username = "admin' OR 1=1 --" allowed bypassing authentication.
 
 To remediate this vulnerability, I replaced all string-built SQL with parameterized queries (PyMySQL %s placeholders).
 
-Before: <img width="747" height="103" alt="IMG_9712" src="https://github.com/user-attachments/assets/d7481c9c-234f-4796-a4bb-c9f29152cfc4" />
+Before:
 
-After: <img width="703" height="77" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
+<img width="747" height="103" alt="IMG_9712" src="https://github.com/user-attachments/assets/d7481c9c-234f-4796-a4bb-c9f29152cfc4" />
+
+After:
+
+<img width="703" height="77" alt="IMG_1059" src="https://github.com/user-attachments/assets/acc14d81-da70-4c9d-bbdd-8b0dda6571b9" />
 
 2. Plaintext credential storage
 
