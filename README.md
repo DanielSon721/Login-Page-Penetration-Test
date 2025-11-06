@@ -43,7 +43,7 @@ After:
 
 ## 2. Plaintext credential storage
 
-Passwords were persisted in the DB as clear text. If the DB was leaked, attacker immediately had usable credentials.
+Passwords were persisted in the database as plaintext. If the database was leaked, attacker immediately had usable credentials.
 
 <img width="267" height="139" alt="IMG_6150" src="https://github.com/user-attachments/assets/07e24f6b-ac1a-4742-a8a1-7ca8752b6be7" />
 
