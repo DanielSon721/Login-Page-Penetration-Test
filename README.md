@@ -30,7 +30,8 @@ This combination made the app trivially exploitable during testing.
 
 Occurred because SQL queries were assembled with string concatenation using raw username/password inputs.
 
-<img width="756" height="475" alt="IMG_4317" src="https://github.com/user-attachments/assets/59027c7f-9ff0-4c59-bc07-7676d47bb87c" />
+<img width="756" height="475" alt="image" src="https://github.com/user-attachments/assets/1558fc64-9d77-4145-8465-3940cdad3111" />
+
 
 <br>
 
