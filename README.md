@@ -47,9 +47,9 @@ Passwords were persisted in the database as plaintext. If the database was leake
 
 <img width="267" height="139" alt="IMG_6150" src="https://github.com/user-attachments/assets/07e24f6b-ac1a-4742-a8a1-7ca8752b6be7" />
 
-I deployed bcrypt salted password hashing to convert plaintext passwords into ciphertext, preventing human readability.
+I deployed Argon2 salted password hashing to convert plaintext passwords into ciphertext, preventing human readability.
 
-<img width="591" height="140" alt="IMG_7736" src="https://github.com/user-attachments/assets/97a82857-d55d-4d8f-aded-6d3a68688ec3" />
+<img width="267" height="44" alt="image" src="https://github.com/user-attachments/assets/e4edf7f3-5f71-4769-8046-e72a337066ef" />
 
 ## 3. Automated brute-force
 
