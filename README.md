@@ -38,8 +38,6 @@ Occurred because SQL queries were assembled with string concatenation using raw 
 
 <br>
 <br>
-<br>
-<br>
 
 To remediate this vulnerability, I replaced all string-built SQL with parameterized queries (PyMySQL %s placeholders).
 
