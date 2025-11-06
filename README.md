@@ -32,7 +32,7 @@ Occurred because SQL queries were assembled with string concatenation using raw 
 
 <img width="756" height="475" alt="image" src="https://github.com/user-attachments/assets/1558fc64-9d77-4145-8465-3940cdad3111" />
 
-
+<br>
 <br>
 
 <img width="756" height="475" alt="IMG_9866" src="https://github.com/user-attachments/assets/3ba13c9a-884b-4552-bbcb-36a1922d801e" />
