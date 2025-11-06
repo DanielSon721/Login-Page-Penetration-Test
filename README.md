@@ -26,9 +26,9 @@ Occurred because SQL queries were assembled with string concatenation using raw 
 
 Example exploit: username = "admin' OR 1=1 --" allowed bypassing authentication.
 
-<img width="1134" height="712" alt="IMG_4317" src="https://github.com/user-attachments/assets/59027c7f-9ff0-4c59-bc07-7676d47bb87c" />
+<img width="756" height="475" alt="IMG_4317" src="https://github.com/user-attachments/assets/59027c7f-9ff0-4c59-bc07-7676d47bb87c" />
 
-<img width="1134" height="712" alt="IMG_9866" src="https://github.com/user-attachments/assets/3ba13c9a-884b-4552-bbcb-36a1922d801e" />
+<img width="756" height="475" alt="IMG_9866" src="https://github.com/user-attachments/assets/3ba13c9a-884b-4552-bbcb-36a1922d801e" />
 
 
 To remediate this vulnerability, I replaced all string-built SQL with parameterized queries (PyMySQL %s placeholders).
