@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Login Page</h1>
+      <br />
+
+      {% if error %}
+      <p style="color: red">{{ error }}</p>
+      {% endif %}
+
+      <form action="/login" method="POST">
+        <input name="username" type="text" placeholder="Username" />
+        <br />
+        <input name="password" type="text" placeholder="Password" />
+        <br />
+        <button type="submit">Login</button>
+
+        <br /><br /><br />
+        <a href="/signup-page">Create an account</a>
+      </form>
+    </div>
+  </body>
+</html>

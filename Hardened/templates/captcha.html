@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Captcha Verification</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <h2>Security Verification</h2>
+    <p>Too many failed login attempts. Please verify you are not a bot.</p>
+
+    <form action="/captcha" method="POST">
+      <input type="hidden" name="username" value="{{ username }}" />
+
+      <!-- Google reCAPTCHA widget -->
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LepzwQsAAAAAOWpfGJZ5lc0jXwx-hMw9EMNdOlF"
+      ></div>
+
+      <br />
+      <button type="submit">Verify</button>
+    </form>
+  </body>
+</html>

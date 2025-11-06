@@ -1,0 +1,49 @@
+<!-- templates/message.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Message</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <style>
+      /* small inline fallback if you don't serve static/style.css */
+      .card {
+        max-width: 420px;
+        margin: 100px auto;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>{{ title }}</h2>
+      <p>{{ message }}</p>
+
+      <!-- link back to home (login) -->
+      <a class="btn" href="{{ url_for('home') }}">Back to Login</a>
+
+      <!-- optional: link to signup page if provided -->
+      {% if show_signup %}
+      <a
+        class="btn"
+        href="{{ url_for('signup_page') }}"
+        style="margin-left: 8px"
+        >Create Account</a
+      >
+      {% endif %}
+    </div>
+  </body>
+</html>
